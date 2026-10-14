@@ -1,22 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import logo from "./img/logo.png";
+import search1 from "./img/search1.png";
+import search from "./img/search.png";
+import user from "./img/user.png"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="Logo">
+          <img src={logo} />
+        </div>
+
+        <h1>MegaMart</h1>
+
+        <div className="search12">
+          <img className="search1" src={search1} />
+          <h3>Search essentials, groceries and more...</h3>
+          <img className="search" src={search} />
+        </div>
+
+        <div className="Registr">
+          <img src={user}/>
+          <h3>Sign Up/Sign In</h3>
+        </div>
       </header>
     </div>
   );
